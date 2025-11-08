@@ -287,7 +287,6 @@ footer {
   .nav ul {
     display: none; /* Esconde o menu completo no mobile */
   }
-}
 
 @media (max-width: 768px) {
 
