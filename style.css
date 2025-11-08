@@ -1,0 +1,406 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+body {
+  background-color: #fff;
+  color: #193c33;
+}
+
+
+.nav{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 24px 5%;
+  background-color: #fff;
+  position: fixed;     
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+}
+
+.logo {
+  height: 75px;
+  width: auto;
+  object-fit: contain;
+}
+
+
+.nav ul {
+  list-style: none;
+  display: flex;
+  gap: 32px;
+}
+
+.nav a {
+  text-decoration: none;
+  color: #193c33;
+  font-weight: 500;
+  transition: 0.3s;
+  padding:10px 24px;
+}
+
+.nav a:hover {
+  color: #000000;
+}
+.cta {
+  background-color: #193c33;    
+  color: white !important;        
+  padding: 10px 24px;            
+  border-radius: 30px;                     
+  transition: all 0.3s ease;
+}
+
+
+.cta:hover {
+  background-color: #6a986c;
+  transform: scale(1.05);
+}
+
+.hero {
+  width: 100%;
+  margin-top: 100px;
+  text-align: center;
+  color: #193c33;
+}
+
+
+.hero-image-wrapper {
+  width: 100%;
+}
+
+.hero-image {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* PARAGRAFO */
+.hero-text {
+  max-width: 800px;
+  margin: 32px auto;
+  padding: 0 16px;
+  text-align: left;
+}
+
+.hero-text h2 {
+  font-size: 25px;
+  line-height: 1.6;
+  font-weight: normal
+}
+.cta-container {
+  text-align: center;
+  margin-top: 32px;
+}
+
+.cta-button {
+  display: inline-block;
+  background-color: #1b2f24;
+  color: #fff;
+  font-family: 'Trebuchet MS', sans-serif;
+  font-weight: 600;
+  text-decoration: none;
+  padding: 14px 28px;
+  border-radius: 30px;
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.cta-button:hover {
+  background-color: #254533; 
+  transform: translateY(-2px);}
+/* MISSIONS */
+.missions {
+  padding: 64px 10%;
+  display: flex;
+  flex-direction: column;
+  gap: 48px;
+  font-family: 'Trebuchet MS', sans-serif;
+}
+
+.mission {
+  border-radius: 20px;
+  padding: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 32px;
+  color: #fff;
+  flex-wrap: nowrap;
+}
+
+
+.mission article {
+  flex: 1;
+  min-width: 300px;
+}
+
+.mission h1 {
+  font-size: 29px;
+  margin-bottom: 16px;
+}
+
+.mission p {
+  line-height: 1.6;
+  font-size: 19px;
+}
+
+
+.mission img {
+  width: 300px;
+  height: auto;
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+.green { background-color: #7aa77b; }
+.blue { background-color: #6689aa; }
+.brown { background-color: #a36b4a; }
+.purple { background-color: #9a73a6; }
+
+.about {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+  padding: 80px 10%;
+  background-color: #f5f5f5;
+  flex-wrap: wrap;
+}
+
+.about-content {
+  flex: 2; /
+  max-width: 800px; /
+}
+
+.about-content h1 {
+  font-size: 28px;
+  color: #1b2f24;
+  margin-bottom: 16px;
+}
+
+.about-content p {
+  font-size: 16px;
+  line-height: 1.7;
+  color: #333;
+}
+
+.about-image {
+  flex: 1;
+  width: 300px;
+  border-radius: 16px;
+}
+
+
+.contact {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 48px;
+  padding: 64px 10%;
+  flex-wrap: wrap;
+}
+
+.contact-image {
+  width: 350px;
+  border-radius: 15px;
+}
+
+.contact-form h1 {
+  color: #1b2f24;
+  margin-bottom: 24px;
+  font-size: 20px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+input {
+  padding: 12px 16px;
+  border: none;
+  border-radius: 30px;
+  background-color: #1b2f24;
+  color: #fff;
+  font-size: 16px;
+}
+
+input::placeholder {
+  color: #fff;
+  opacity: 0.8;
+}
+
+.contact-form button {
+  align-self: flex-end;
+  padding: 12px 16px;
+  border: none;
+  border-radius: 30px;
+  background-color: #1b2f24;
+  color: #fff;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.3s;
+  font-size: 12px
+}
+
+.contact-form button:hover {
+  background-color: #254533;
+}
+
+
+footer {
+  text-align: center;
+  padding: 32px;
+  font-size: 14px;
+  color: #444;
+  border-top: 1px solid #eee;
+}
+
+/* ===== HAMBURGER MENU ===== */
+.hamburger {
+  display: none;
+  cursor: pointer;
+}
+
+/* Estilo da imagem do hamburger */
+.hamburger img {
+  width: 28px; /* ajusta o tamanho conforme quiser */
+  height: auto;
+}
+
+/* RESPONSIVO MOBILE */
+@media (max-width: 768px) {
+  /* Mostra apenas o hamburger e o logo */
+  .hamburger {
+    display: block;
+    position: absolute;
+    right: 5%;
+    top: 30px;
+  }
+
+  .nav ul {
+    display: none; /* Esconde o menu completo no mobile */
+  }
+}
+
+@media (max-width: 768px) {
+
+  /* NAV */
+  .nav {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 16px 5%;
+  }
+
+  .nav ul {
+    flex-direction: column;
+    gap: 12px;
+    width: 100%;
+    margin-top: 12px;
+  }
+
+  .nav a {
+    display: block;
+    width: 100%;
+    padding: 10px 0;
+  }
+
+  /* HERO */
+  .hero {
+    margin-top: 140px;
+    text-align: center;
+  }
+
+  .hero-text {
+    max-width: 100%;
+    padding: 0 24px;
+    text-align: center;
+  }
+
+  .hero-text h2 {
+    font-size: 20px;
+  }
+
+  .cta-button {
+    padding: 12px 20px;
+    font-size: 14px;
+  }
+
+  /* MISSÕES */
+  .missions {
+    padding: 48px 5%;
+    gap: 32px;
+  }
+
+  .mission {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .mission article {
+    min-width: unset;
+  }
+
+  .mission img {
+    width: 100%;
+    max-width: 350px;
+  }
+
+  .mission h1 {
+    font-size: 22px;
+  }
+
+  .mission p {
+    font-size: 16px;
+  }
+
+  /* SOBRE */
+  .about {
+    flex-direction: column;
+    text-align: center;
+    padding: 64px 5%;
+  }
+
+  .about-content {
+    max-width: 100%;
+  }
+
+  .about-image {
+    width: 80%;
+    margin-top: 24px;
+  }
+
+  /* CONTACTO */
+  .contact {
+    flex-direction: column;
+    text-align: center;
+    padding: 48px 5%;
+  }
+
+  .contact-image {
+    width: 80%;
+    max-width: 300px;
+  }
+
+  .contact-form h1 {
+    font-size: 18px;
+  }
+
+  .contact-form button {
+    align-self: center; 
+    font-size: 14px;
+    padding: 10px 20px;
+  }
+
+  /* FOOTER */
+  footer {
+    font-size: 13px;
+    padding: 24px;
+  }
